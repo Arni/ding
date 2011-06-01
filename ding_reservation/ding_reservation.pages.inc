@@ -10,14 +10,15 @@
 function ding_reservation_page_reserve_item($object, $reservable = NULL) {
   global $user;
 
-  if (func_num_args() == 1) {
+  $args = func_get_args();
+  if (sizeof($args) == 1) {
     //No id for the reserable item so get it from the Ting object
     $reservable = $object->localId;
   } else {
     //Some reserable items e.g. periodicals have complex ids containing /
     //These are intepreted as seperate arguments for the page callback so
     //combine them.
-    $reservable = implode('/', array_slice(func_get_args() ,1));
+    $reservable = implode('/', array_slice($args,1));
   }
   
   // If client wants JSON (usually AJAX requests), let's give it to them.

@@ -38,7 +38,7 @@ function ding_reservation_menu() {
  */
 function ding_reservation_form_ding_cart_list_form_alter(&$form, $form_state) {
   if (ding_provider_supports('reservation', 'options')) {
-    $form['options'] = ding_provider_invoke('reservation', 'options', $account, TRUE);
+    $form['options'] = ding_provider_invoke('reservation', 'options', $form['account']['#value'], TRUE);
     $form['options']['#tree'] = TRUE;
   }
 
