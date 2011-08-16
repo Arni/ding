@@ -3,6 +3,8 @@
  * JavaScript to handle our library map.
  */
 
+(function ($) {
+
 /**
  * Prototype for controlling the map.
  */
@@ -88,7 +90,9 @@ Drupal.DingLibraryMapController = function (mapId, options) {
     });
 
     // Triggers for hiding info: mouseout, resize, zoom, move.
-    self.mapContainer.bind('widthchange heightchange zoom move', self.infoBox.hide());
+    self.mapContainer.bind('widthchange heightchange zoom move', function () {
+      self.infoBox.hide();
+    });
   };
 
   /**
@@ -223,12 +227,13 @@ Drupal.DingLibraryMapController = function (mapId, options) {
         day = nextDay; //step to day after last day in current section
       }
 
-      // Add click handler
+      // Add click handler to make a click on the infobox go to the
+      // marker URL, ie. the library page.
       self.infoBox.unbind('click').click(function() {
         window.location = markerData.url;
       });
 
-      //Position and show info
+      // Position and show information box.
       point = self.map.openlayers.getPixelFromLonLat(marker.lonlat);
       self.infoBox.css({ 'left': (point.x - 10) + 'px', 'top': (point.y - self.infoBox.outerHeight()) + 4 + 'px' }).show();
   };
@@ -241,8 +246,21 @@ Drupal.DingLibraryMapController = function (mapId, options) {
   return self;
 };
 
-// Set up our controller when the document is loaded.
-jQuery(function($) {
+/**
+ * Set up a behavior for configuring the library map.
+ */
+Drupal.behaviors.openlayersDingLibraryMap = function (context) {
+  // Make sure this behavior is run only once.
+  if (Drupal.settings.dingLibraryMap.initialised) { return; }
+
+  // If OpenLayers is not done initialising yet, we wait for a while and
+  // try again.
+  if (!$('#library-map').data('openlayers')) {
+    window.setTimeout(Drupal.behaviors.openlayersDingLibraryMap, 100);
+    return;
+  }
+  Drupal.settings.dingLibraryMap.initialised = true;
+
   var lmc = new Drupal.DingLibraryMapController('library-map', Drupal.settings.dingLibraryMap);
 
   // On the page with the library list, there are links to view the
@@ -269,5 +287,7 @@ jQuery(function($) {
   $('body').bind('DingLibraryStatusChange', function (event, nid, isOpen) {
     lmc.updateMarkerStatus(nid, isOpen);
   });
-});
+};
+
+})(jQuery);
 

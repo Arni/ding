@@ -15,6 +15,27 @@ function ding_base_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'better_formats_fieldset_title';
+  $strongarm->value = '';
+
+  $export['better_formats_fieldset_title'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'better_formats_long_tips_link_text';
+  $strongarm->value = '';
+
+  $export['better_formats_long_tips_link_text'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'better_formats_per_node_type';
+  $strongarm->value = 1;
+
+  $export['better_formats_per_node_type'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'date_format_date_short';
   $strongarm->value = 'd-m-Y';
 
@@ -40,6 +61,20 @@ function ding_base_strongarm() {
   $strongarm->value = 'Y-m-d H:i';
 
   $export['date_format_short'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'default_oembedcore_provider';
+  $strongarm->value = array(
+    'youtube' => FALSE,
+    'vimeo' => FALSE,
+    'revision3' => FALSE,
+    'qik' => FALSE,
+    'flickr' => FALSE,
+    'viddler' => FALSE,
+  );
+
+  $export['default_oembedcore_provider'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;

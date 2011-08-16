@@ -116,7 +116,7 @@ function theme_ding_library_user_loan_list_form($form) {
 
       $rows[] = array(
         'data' => $cells,
-        'class' => (($checkbox) ? 'selectable' : 'immutable'),
+        'class' => (($form['loans'][$loan_id]['#disabled']) ? 'immutable' : 'selectable'),
       );
     }
 
@@ -164,7 +164,8 @@ function template_preprocess_ding_library_user_list_item(&$vars) {
 
     if ($object->url) {
       $vars['url'] = $object->url;
-      $vars['title'] = l($vars['title'], $object->url);
+      // Pass HTML as the title has already been passed through check_plain() above.
+      $vars['title'] = l($vars['title'], $object->url, array('html' => TRUE));
     }
     
     //Fall back to object authors if no authors are specified

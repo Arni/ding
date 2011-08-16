@@ -1,8 +1,5 @@
 <?php
 
-// Default interest period is ~six months.
-define('DING_USER_DEFAULT_INTEREST_PERIOD', 183);
-
 /**
  * Implementation of hook_menu().
  */

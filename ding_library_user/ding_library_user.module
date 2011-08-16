@@ -1,9 +1,5 @@
 <?php
 
-// Default interest period is ~six months.
-// TODO: move to ding_reservation
-define('DING_LIBRARY_USER_DEFAULT_INTEREST_PERIOD', 183);
-
 /**
  * Implementation of hook_menu().
  */
