@@ -20,6 +20,6 @@ function ding_library_map_update_6100(&$sandbox) {
   else {
     # Delete bogus data, if any.
     variable_del('ding_library_map_center');
-  }
 }
+  }
 

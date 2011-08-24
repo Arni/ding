@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file cart.inc
  * Provides several cart related panels content types.

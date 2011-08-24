@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * Get similar terms preview asyncroneously.
  */

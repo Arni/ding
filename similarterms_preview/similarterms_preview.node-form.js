@@ -1,4 +1,5 @@
 
+
 Drupal.similartermsPreview = {
   // Check interval needs to be fairly high, since Drupal's autocomplete
   // triggers a lot of focus/blur events when working. We need to delay

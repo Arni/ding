@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * Change admin password form.
  */

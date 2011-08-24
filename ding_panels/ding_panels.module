@@ -216,9 +216,11 @@ function _ding_panels_get_image($path) {
   $cut_path = str_ireplace("http://", "", $path);
   $image_name  = preg_replace("/[^\w]/", "-", $path);
 
-  $image_path = $base_path."/".$image_name;
-  if (file_exists($image_path) &&
-    time() < (filectime($imagepath) + (60*60*24))) {
+  $image_path = $base_path."/".$image_name .'.png';
+
+  //Randersfix relative stier så ikke ud til at virke på windows.
+  if (file_exists($_SERVER{'DOCUMENT_ROOT'} . '/' . $image_path) &&
+    time() < (filectime($_SERVER{'DOCUMENT_ROOT'} . '/' . $image_path) + (60*60*24))) {
     // File already downloaded and within 24 hours cache lifetime
     $return = $image_path;
   } else {

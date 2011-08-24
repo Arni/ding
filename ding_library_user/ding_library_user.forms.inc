@@ -246,7 +246,7 @@ function ding_library_user_loan_list_form($form_state, $account, $records) {
       if (in_array($loan['id'], $_SESSION['ding_library_user_loans_renewed']['successfully'])) {
         $form['loans'][$loan['id']]['#renewed'] = 'success';
         $form['loans'][$loan['id']]['#renewed_text'] = t('Successfully renewed');
-      }
+  }
       elseif (in_array($loan['id'], $_SESSION['ding_library_user_loans_renewed']['failed'])) {
         $form['loans'][$loan['id']]['#renewed'] = 'failed';
         $form['loans'][$loan['id']]['#renewed_text'] = t('Renewal failed');

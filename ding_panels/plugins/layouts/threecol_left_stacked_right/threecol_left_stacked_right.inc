@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file ding_panels_layouts.module
  * Provides a few library-related Panels layouts.

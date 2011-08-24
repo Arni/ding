@@ -1,6 +1,7 @@
 <?php
 
 
+
 /**
  * @file
  * Documentation for ding_provider hooks and pseudo-hooks.

@@ -126,7 +126,7 @@ function ding_cart_update_6000(&$sandbox) {
 }
 
 /**
- * Make varchar columns nullable if they have no default value and are 
+ * Make varchar columns nullable if they have no default value and are
  * not required.
  */
 function ding_cart_update_6001(&$sandbox) {

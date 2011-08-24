@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file categories.inc
  * Provides a category browser for the events overview page.
@@ -49,6 +50,10 @@ function ding_event_categories_content_type_render($subtype, $conf, $panel_args,
       $links[] = l($term->name, $base_path . '/' . $term->tid, array('query' => $query));
     }
 
+    foreach (taxonomy_get_tree($conf['vocabulary2'], 0, -1, 1) as $term) {
+      $links[] = l($term->name, $base_path . '/' . $term->tid, array('query' => $query));
+    }
+
     if (!empty($links)) {
       $block->content = theme('item_list', $links);
     }
@@ -84,6 +89,15 @@ function ding_event_categories_content_type_edit_form(&$form, &$form_state) {
     '#default_value' => $form_state['conf']['vocabulary'],
   );
 
+
+    $form['vocabulary2'] = array(
+        '#type' => 'select',
+        '#title' => t('Vocabulary2'),
+        '#description' => t('Select the vocabulary used for event targets.'),
+        '#options' => $vocabulary_options,
+        '#default_value' => $form_state['conf']['vocabulary2'],
+    );
+
   return $form;
 }
 
@@ -92,5 +106,6 @@ function ding_event_categories_content_type_edit_form(&$form, &$form_state) {
  */
 function ding_event_categories_content_type_edit_form_submit(&$form, &$form_state) {
   $form_state['conf']['vocabulary'] = $form_state['values']['vocabulary'];
+  $form_state['conf']['vocabulary2'] = $form_state['values']['vocabulary2'];
 }
 

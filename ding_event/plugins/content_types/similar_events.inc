@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file similar_events.inc
  * Provides a content type that shows similar events.

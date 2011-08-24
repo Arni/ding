@@ -151,7 +151,7 @@ function template_preprocess_ding_library_user_list_item(&$vars) {
    */
   if (ding_provider_supports($vars['provider_type'], 'details')) {
     $item = ding_provider_invoke($vars['provider_type'], 'details', $vars['item']);
-    $vars['item'] = $item;
+  $vars['item'] = $item;
   }
   else {
     $item = $vars['item'];
@@ -167,7 +167,7 @@ function template_preprocess_ding_library_user_list_item(&$vars) {
       // Pass HTML as the title has already been passed through check_plain() above.
       $vars['title'] = l($vars['title'], $object->url, array('html' => TRUE));
     }
-    
+
     //Fall back to object authors if no authors are specified
     $vars['authors'] = ($item['authors']) ? check_plain($item['authors']) : (($object->creators_string) ? check_plain($object->creators_string) : '');
     $image_url = ting_covers_object_url($object, '80_x');
@@ -196,7 +196,7 @@ function template_preprocess_ding_library_user_list_item(&$vars) {
     $vars['remote'] = isset($item['remote_reservation']) && $item['remote_reservation'] ? t('remote reservation') : FALSE;
   }
   $vars['materials_number'] = isset($item['materials_number']) ? $item['materials_number'] : '';
-}
+  }
 
 /**
  * Theme an image for a list item.

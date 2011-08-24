@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file ding_feature_ref.module
  * Provides a few library-related panes for the Panels module.

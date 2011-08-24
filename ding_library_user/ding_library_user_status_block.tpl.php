@@ -20,6 +20,7 @@ else{
 
 }
 ?>
+<?php if ($_SERVER['HTTPS']=='on'): ?>
 <div id="account-profile" class="clearfix">
   <div class="user">
 
@@ -27,7 +28,6 @@ else{
       <?php print l(t('log out'), 'logout', array('attributes' => array('class' =>'logout'))); ?>
     </div>
 
-    <h5><?php print t('Welcome'); ?></h5>
     <div class="username">
       <?php print l($display_name, $profile_link, array('attributes' => array('class' =>'username')));  ?>
     </div>
@@ -67,3 +67,51 @@ else{
     </div>
   <?php endif; ?>
 </div>
+<?php else: ?>
+<div id="account-profile" class="clearfix">
+  <div class="user">
+
+    <div class="logout">
+      <?php print l(t('log out'), 'logout', array('attributes' => array('class' =>'logout'))); ?>
+    </div>
+
+    <div class="username">
+
+    </div>
+
+  </div>
+  <?php if ($status_available): ?>
+    <?php if ($has_cart): ?>
+      <div class="cart">
+        <div class="count"></div>
+        <?php print l(t('Go to cart'), 'user/' . $user->uid . '/cart'); ?>
+      </div>
+    <?php endif; ?>
+
+    <ul>
+      <li>
+
+        <div class="content loans">
+          <?php print l('<span>'.t("Loans") . '</span> ', 'user/'. $user->uid . '/status', array('html' => TRUE)); ?>
+        </div>
+        <?php if($loan_status != "default"){ ?>
+          <div class="status"></div>
+        <?php } ?>
+      </li>
+      <li>
+        <div class="content reservations">
+          <?php print l('<span>'.t("Reservations") . '</span>', 'user/'. $user->uid . '/status', array('html' => TRUE, 'fragment' => 'reservation')); ?>
+        </div>
+        <?php if($reservation_status  != "default"){ ?>
+          <div class="status"></div>
+        <?php } ?>
+
+      </li>
+  </ul>
+  <?php else: ?>
+    <div class="status-unavailable">
+      <?php print $status_unavailable_message; ?>
+    </div>
+  <?php endif; ?>
+</div>
+ <?php endif; ?>

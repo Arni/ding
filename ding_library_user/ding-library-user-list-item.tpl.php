@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file ding-library-user-list-item.tpl.php
  *

@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file ding_event_similar_events.tpl.php
  * Template to display similar events, usually in the context of a Panel.

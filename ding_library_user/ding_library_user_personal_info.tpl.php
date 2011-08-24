@@ -2,7 +2,6 @@
 /**
  * @file
  * Template for rendering a user's library user personal information.
- */
 ?>
 <div class="vcard">
   <h4><?php print t('Basic information'); ?></h4>

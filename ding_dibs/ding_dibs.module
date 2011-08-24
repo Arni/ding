@@ -1,9 +1,11 @@
 <?php
 
+
 /**
  * @file
  * Ding DIBS integration.
  */
+
 
 /**
  * Implementation of hook_dibsapi().

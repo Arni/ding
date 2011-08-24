@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file
  * Template to render Atom feed entry.

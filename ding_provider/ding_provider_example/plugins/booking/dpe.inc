@@ -1,6 +1,7 @@
 <?php
 
 
+
 /**
  * @file
  * Ding booking plugin.

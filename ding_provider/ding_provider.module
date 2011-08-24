@@ -4,7 +4,6 @@
  * Magic value for providers to return if not authenticated, md5('DING_PROVIDER_AUTH_REQUIRED').
  */
 define('DING_PROVIDER_AUTH_REQUIRED', '9830f1673cd4295cfe742c1cf8933fa0');
-
 /**
  * Ditto for DING_PROVIDER_AUTH_BLOCKED.
  */
@@ -170,6 +169,7 @@ function ding_provider_ctools_plugin_availability() {
       'settings form',
       'details',
       'periodical',
+       'adhl',
     ),
   );
 }

@@ -7,3 +7,4 @@ features[menu_links][] = "admin:admin/content"
 features[menu_links][] = "admin:node/add"
 name = "Ding! admin"
 package = "Ding!"
+

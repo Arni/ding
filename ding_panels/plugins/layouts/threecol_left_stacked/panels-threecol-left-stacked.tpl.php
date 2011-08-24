@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file panels_threecol_left_stacked.tpl.php
  * Template for a 3 column panel where the left and middle columns are

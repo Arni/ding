@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file
  * Template to render a node as KultuNaut XML feed activity.

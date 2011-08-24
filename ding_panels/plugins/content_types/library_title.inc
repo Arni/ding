@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 /**
  * @file library_title.inc

@@ -12,7 +12,7 @@
 .ding-library-map .resize:active { outline: 0 none; }
 
 /* library information box */
-#library-info { 
+#library-info {
   background-position: left bottom;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -24,7 +24,7 @@
 
 #library-info * { font: 10px verdana, sans-serif; }
 #library-info .frame { border: 1px solid #fff; border-width: 1px 1px 0 1px; }
-#library-info .inner { 
+#library-info .inner {
   background: white;
   border: 4px solid #444;
   padding: 7px;

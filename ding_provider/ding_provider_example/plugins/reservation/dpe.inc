@@ -85,8 +85,8 @@ function ding_provider_example_reservation_list($account) {
       // Queue number. optional.
       'queue_number' => 3,
       //Notes - some additional information
-      'notes' => "Rincewind was here.", 
-  
+      'notes' => "Rincewind was here.",
+
       // For 'fetchable' reservations, see the next entry.
     ),
     'euaeu' => array(

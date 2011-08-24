@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * Implementation of hook_menu().
  */
@@ -90,6 +91,13 @@ function ding_cart_ctools_plugin_directory($module, $plugin) {
  */
 function ding_cart_add_ting_object($object) {
   // Create an array of the item to save.
+    
+  //Randersfix. Manglende thumbnail_url gav databasefejl
+  $image_url =  $object->additionalInformation->thumbnailUrl;
+  if (!$image_url) {
+      $image_url = '';
+  }
+
   $cart_item = array(
     'uid' => $GLOBALS['user']->uid,
     'local_id' => $object->localId,
@@ -98,7 +106,7 @@ function ding_cart_add_ting_object($object) {
     'title' => $object->title,
     'author' => $object->creators[0],
     'type' => $object->type,
-    'thumbnail_url' => $object->additionalInformation->thumbnailUrl,
+    'thumbnail_url' => $image_url
   );
 
   // Save the item to the cart table.
@@ -173,5 +181,5 @@ function ding_cart_detect_ahah() {
  */
 function ding_cart_remove_item($account, $local_id) {
   db_query("DELETE FROM {ding_cart} WHERE uid = %d AND local_id = '%s';", $account->uid, $local_id);
-}
 
+}

@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file object.inc
  * Provides a Panels content type for display of Ting objects.

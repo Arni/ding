@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * Generate custom XML feed for exporting events to KultuNaut.
  */

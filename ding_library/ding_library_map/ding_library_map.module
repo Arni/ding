@@ -76,12 +76,12 @@ function _ding_library_map_data() {
       if (isset($center['lat']) && isset($center['lon'])
           && $center['lat'] && $center['lon']) {
         $map['center']['initial']['centerpoint'] = $center['lon'] . ', ' . $center['lat'];
+    }
       }
     }
-  }
 
   return $map;
-}
+				}
 
 /**
  * Helper function to generate marker data.

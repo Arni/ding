@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file ding_breadcrumbs.module
  * Handles the generation and loading of nodes from "slugs", 
@@ -52,10 +53,18 @@ function ding_breadcrumbs_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
         }
       }
     }
+        // If there is only the home node in the trail we use primary links  trail in stead -- AL
 
-    if (count($trail) > 1) {
+        if (count($trail) == 1) {
+            menu_set_active_menu_name("primary-links");
+        } else {
+            $trail[] = $node->title;
       drupal_set_breadcrumb($trail);
     }
+        //Hack to treat library nodes as normal nodes in the breadcrumb
+    } elseif ($op == 'load' && $node->type == 'library') {
+        menu_set_active_menu_name("primary-links");
+
   }
 }
 

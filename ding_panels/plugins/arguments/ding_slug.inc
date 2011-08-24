@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file
  * CTools plugin to provide an argument handler for Ding library slugs.

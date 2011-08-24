@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file ding_box.inc
  * Definition of the 'ding_box' pane style.

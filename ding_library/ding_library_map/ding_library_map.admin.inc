@@ -1,4 +1,4 @@
-<?php
+<?php 
 /**
  * @file
  * Admin forms for the Ding Library Map module.
@@ -17,7 +17,7 @@ function ding_library_map_admin_settings_form(&$form_state) {
     '#description' => t('The default center coordinates of the map, expressed as a decimal latitude and longitude.'),
     '#tree' => TRUE,
   );
-
+  
   $form['ding_library_map_center']['lat'] = array(
     '#type' => 'textfield',
     '#title' => t('Latitude'),

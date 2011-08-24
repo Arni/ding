@@ -1,6 +1,7 @@
 <?php
 
 
+
 /**
  * Provides an overview of used plugins, and setting pages.
  */

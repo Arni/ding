@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * Implementation of hook_menu().
  */
@@ -27,7 +28,8 @@ function similarterms_preview_perm() {
  * Implementation of hook_form_alter().
  */
 function similarterms_preview_form_alter(&$form, $form_state, $form_id) {
-  if ($form['#id'] == 'node-form' && user_access('preview similar content by terms')) {
+    //Randersfix. Sider som ikke har tag giver fejl
+  if ($form['#id'] == 'node-form' && user_access('preview similar content by terms') && $form['taxonomy']['tags']) {
     // Provide a settings list of tagging vocabularies and a callback URL.
     drupal_add_js(array('similartermsPreview' => array(
       'callback' => url('similarterms/preview/js'),
