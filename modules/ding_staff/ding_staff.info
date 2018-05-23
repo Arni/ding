@@ -68,7 +68,6 @@ features[page_manager_handlers][] = user_view_panel_context_3
 features[page_manager_pages][] = ding_staff_library
 features[profile2_type][] = ding_staff_profile
 features[rules_config][] = rules_role_staff_assign
-features[rules_config][] = rules_when_profile2_is_updated
 features[taxonomy][] = ding_staff_department
 features[variable][] = realname_pattern
 features[views_view][] = ding_staff

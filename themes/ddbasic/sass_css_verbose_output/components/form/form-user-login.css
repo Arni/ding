@@ -1,0 +1,212 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(-180deg); }
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  50% {
+    -moz-transform: rotate(-180deg); }
+  100% {
+    -moz-transform: rotate(-360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.user-login-form .close-user-login::after, .user-login-form .submit-button-with-icon .color-and-icon::after, .user-login-form .ding-gatewayf--login-block a::after {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.user-login-form .close-user-login::after {
+  content: "\e907"; }
+
+.user-login-form .submit-button-with-icon .color-and-icon::after {
+  content: "\e90b"; }
+
+.user-login-form .ding-gatewayf--login-block a::after {
+  content: "\e916"; }
+
+.user-login-form {
+  -webkit-transition: margin-bottom 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: margin-bottom 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: margin-bottom 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  float: left; }
+  .topbar-is-open .user-login-form {
+    margin-bottom: 45px; }
+  .user-login-form .close-user-login {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    float: right;
+    margin-bottom: 30px;
+    cursor: pointer; }
+    .user-login-form .close-user-login::after {
+      font-size: 54px;
+      line-height: 1;
+      color: rgba(38, 38, 38, 0.54);
+      display: block;
+      position: absolute;
+      top: 0; }
+    .user-login-form .close-user-login::after {
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      -moz-transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      top: 50%;
+      left: 50%; }
+    .user-login-form .close-user-login:hover::after {
+      color: #4d898f; }
+    @media screen and (max-width: 600px) {
+      .user-login-form .close-user-login {
+        display: none; } }
+  .user-login-form .form-item {
+    width: 100%;
+    float: left;
+    margin: 0 0 15px; }
+    .user-login-form .form-item > label {
+      display: none; }
+    .user-login-form .form-item .description {
+      display: none; }
+  .user-login-form .form-actions {
+    margin-bottom: 20px; }
+  .user-login-form .submit-button-with-icon .color-and-icon {
+    position: relative;
+    -webkit-transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    -moz-transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+    padding: 20px 80px 14px 15px;
+    background-color: #f66d70;
+    color: #fff;
+    position: absolute; }
+    .user-login-form .submit-button-with-icon .color-and-icon::after {
+      font-size: 54px;
+      line-height: 1;
+      color: #fff;
+      display: block;
+      position: absolute;
+      top: 0; }
+    .user-login-form .submit-button-with-icon .color-and-icon::after {
+      -webkit-transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      -moz-transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      right: 7px; }
+    .no-touch .user-login-form .submit-button-with-icon .color-and-icon:hover {
+      background-color: #808285;
+      color: #fff; }
+      .no-touch .user-login-form .submit-button-with-icon .color-and-icon:hover::after {
+        color: #fff; }
+  .user-login-form .submit-button-with-icon .ajax-progress-throbber {
+    -webkit-animation: spin 1s linear infinite, fadein 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    -moz-animation: spin 1s linear infinite, fadein 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation: spin 1s linear infinite, fadein 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    -moz-transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 17px;
+    z-index: 2;
+    background-image: url("../../../images/spinner.png");
+    background-size: 100% auto;
+    background-color: #f66d70;
+    width: 35px;
+    height: 35px; }
+    .user-login-form .submit-button-with-icon .ajax-progress-throbber .throbber,
+    .user-login-form .submit-button-with-icon .ajax-progress-throbber .message {
+      display: none; }
+  .no-touch .user-login-form .submit-button-with-icon:hover .ajax-progress-throbber,
+  .no-touch .user-login-form .submit-button-with-icon:hover .color-and-icon {
+    background-color: #808285; }
+  .user-login-form .ding-gatewayf--login-block {
+    margin-top: 10px; }
+    .user-login-form .ding-gatewayf--login-block a {
+      position: relative;
+      -webkit-transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      -moz-transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      width: 100%;
+      float: left;
+      border-radius: 5px;
+      padding: 20px 80px 14px 15px;
+      background-color: #ccc;
+      color: rgba(38, 38, 38, 0.54); }
+      .user-login-form .ding-gatewayf--login-block a::after {
+        font-size: 54px;
+        line-height: 1;
+        color: rgba(38, 38, 38, 0.54);
+        display: block;
+        position: absolute;
+        top: 0; }
+      .user-login-form .ding-gatewayf--login-block a::after {
+        -webkit-transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        -moz-transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        right: 7px; }
+      .no-touch .user-login-form .ding-gatewayf--login-block a:hover {
+        background-color: #808285;
+        color: #fff; }
+        .no-touch .user-login-form .ding-gatewayf--login-block a:hover::after {
+          color: #fff; }
+  .user-login-form .sign-up-link {
+    clear: both; }
+    .user-login-form .sign-up-link a {
+      float: right; }

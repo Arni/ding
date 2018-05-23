@@ -1,0 +1,92 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(-180deg); }
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  50% {
+    -moz-transform: rotate(-180deg); }
+  100% {
+    -moz-transform: rotate(-360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.ting-object.view-mode-full .group-rating {
+  float: left;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(38, 38, 38, 0.2); }
+
+.ting-object.view-mode-teaser > .inner .group-rating {
+  padding: 0 20px;
+  margin-top: 10px;
+  opacity: 0;
+  color: #fff; }
+
+.no-touch .ting-object.view-mode-teaser > .inner:hover .group-rating {
+  -webkit-transition: opacity 300ms 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: opacity 300ms 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: opacity 300ms 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 1; }
+
+.ting-object.view-mode-teaser .field-name-ding-serendipity-info {
+  margin-top: 10px; }
+  .ting-object.view-mode-teaser .field-name-ding-serendipity-info .field-label {
+    display: none; }
+
+.ting-object.view-mode-search-result .group-rating {
+  width: 100%;
+  float: left;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(38, 38, 38, 0.2); }
+  @media screen and (max-width: 600px) {
+    .ting-object.view-mode-search-result .group-rating {
+      padding-top: 10px; } }

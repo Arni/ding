@@ -1,0 +1,173 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(-180deg); }
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  50% {
+    -moz-transform: rotate(-180deg); }
+  100% {
+    -moz-transform: rotate(-360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "FaktPro-Normal", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #474747; }
+
+body.toolbar {
+  margin-top: 130px; }
+
+body {
+  -webkit-transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  padding-top: 148px;
+  background-color: #fff; }
+  body.topbar-is-open, body.overlay-is-active {
+    -webkit-transition: background-color 0 cubic-bezier(0.165, 0.84, 0.44, 1);
+    -moz-transition: background-color 0 cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: background-color 0 cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: #262626;
+    overflow: hidden; }
+  body.has-second-level-menu {
+    padding-top: 209px; }
+    @media screen and (max-width: 950px) {
+      body.has-second-level-menu {
+        padding-top: 148px; } }
+  body.search-form-extended.page-search, body.search-form-extended.front {
+    padding-top: 232px; }
+    @media screen and (max-width: 950px) {
+      body.search-form-extended.page-search, body.search-form-extended.front {
+        padding-top: 148px; } }
+    body.search-form-extended.page-search.has-second-level-menu, body.search-form-extended.front.has-second-level-menu {
+      padding-top: 293px; }
+      @media screen and (max-width: 950px) {
+        body.search-form-extended.page-search.has-second-level-menu, body.search-form-extended.front.has-second-level-menu {
+          padding-top: 148px; } }
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  font-weight: 400; }
+
+h1 {
+  font-family: "FaktPro-Light", sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+  color: #4d898e;
+  margin-bottom: 30px; }
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 30px;
+      line-height: 36px; } }
+
+h2 {
+  font-family: "FaktPro-SemiBold", sans-serif;
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 30px; }
+  @media screen and (max-width: 600px) {
+    h2 {
+      font-size: 18px;
+      line-height: 24px; } }
+
+h3 {
+  font-family: "FaktPro-SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px; }
+
+h4 {
+  font-family: "FaktPro-SemiBold", sans-serif;
+  margin-bottom: 20px; }
+
+p {
+  margin: 0 0 30px; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+img.file-icon {
+  display: none; }
+
+a {
+  -webkit-transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-decoration: none;
+  color: #4d898f; }
+  a:hover {
+    color: #262626; }
+
+strong,
+b {
+  font-family: "FaktPro-SemiBold", sans-serif;
+  font-weight: normal; }
+
+ul,
+ol {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style-position: inside; }
+
+label {
+  font-weight: normal; }

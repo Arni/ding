@@ -1,0 +1,198 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(-180deg); }
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  50% {
+    -moz-transform: rotate(-180deg); }
+  100% {
+    -moz-transform: rotate(-360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.ding-campaign {
+  float: left;
+  display: block;
+  margin-right: 2.4911%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2.4911%; }
+  .ding-campaign:last-child {
+    margin-right: 0; }
+  .ding-campaign .ding-campaign-headline {
+    font-family: "FaktPro-SemiBold", sans-serif;
+    font-size: 40px;
+    line-height: 44px; }
+    @media screen and (max-width: 600px) {
+      .ding-campaign .ding-campaign-headline {
+        font-size: 30px;
+        line-height: 36px; } }
+  .ding-campaign .ding-campaign-description {
+    font-family: "FaktPro-SemiBold", sans-serif;
+    font-size: 18px;
+    line-height: 24px; }
+  .ding-campaign a {
+    float: left;
+    display: block;
+    margin-right: 2.4911%;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    z-index: 3;
+    color: #fffff1; }
+    .ding-campaign a:last-child {
+      margin-right: 0; }
+  .no-touch .ding-campaign:hover a {
+    color: #fff; }
+  .ding-campaign.text-on-image {
+    background-size: cover;
+    background-position: center center; }
+    .ding-campaign.text-on-image::before {
+      -webkit-transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      -moz-transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(38, 38, 38, 0.54);
+      z-index: 1; }
+    .ding-campaign.text-on-image .ding-campaign-text {
+      float: left;
+      display: block;
+      margin-right: 2.4911%;
+      width: 57.29537%;
+      position: relative;
+      min-height: 455px;
+      padding: 50px 30px;
+      color: #fff;
+      z-index: 2; }
+      .ding-campaign.text-on-image .ding-campaign-text:last-child {
+        margin-right: 0; }
+    .ding-campaign.text-on-image.ding-campaign-medium-width .ding-campaign-text {
+      float: left;
+      display: block;
+      margin-right: 2.4911%;
+      width: 100%; }
+      .ding-campaign.text-on-image.ding-campaign-medium-width .ding-campaign-text:last-child {
+        margin-right: 0; }
+    .no-touch .ding-campaign.text-on-image:hover::before {
+      background-color: rgba(38, 38, 38, 0.8); }
+  .ding-campaign.image-and-text {
+    background: #4d898e; }
+    .ding-campaign.image-and-text .ding-campaign-text {
+      float: left;
+      display: block;
+      margin-right: 2.4911%;
+      width: 48.75445%;
+      float: right;
+      padding: 40px 30px 40px 0;
+      min-height: 380px; }
+      .ding-campaign.image-and-text .ding-campaign-text:last-child {
+        margin-right: 0; }
+    .ding-campaign.image-and-text .ding-campaign-image {
+      float: left;
+      display: block;
+      margin-right: 2.4911%;
+      width: 48.75445%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-size: cover;
+      background-position: center center; }
+      .ding-campaign.image-and-text .ding-campaign-image:last-child {
+        margin-right: 0; }
+    .no-touch .ding-campaign.image-and-text:hover {
+      background: #808285; }
+  .ding-campaign.text {
+    background: #4d898e; }
+    .ding-campaign.text .ding-campaign-text {
+      float: left;
+      display: block;
+      margin-right: 2.4911%;
+      width: 100%;
+      padding: 40px 30px; }
+      .ding-campaign.text .ding-campaign-text:last-child {
+        margin-right: 0; }
+      .ding-campaign.text .ding-campaign-text .ding-campaign-headline {
+        float: left;
+        display: block;
+        margin-right: 2.4911%;
+        width: 65.8363%; }
+        .ding-campaign.text .ding-campaign-text .ding-campaign-headline:last-child {
+          margin-right: 0; }
+      .ding-campaign.text .ding-campaign-text .ding-campaign-description {
+        float: left;
+        display: block;
+        margin-right: 2.4911%;
+        width: 48.75445%; }
+        .ding-campaign.text .ding-campaign-text .ding-campaign-description:last-child {
+          margin-right: 0; }
+    .ding-campaign.text.ding-campaign-medium-width .ding-campaign-text .ding-campaign-headline {
+      float: left;
+      display: block;
+      margin-right: 2.4911%;
+      width: 100%; }
+      .ding-campaign.text.ding-campaign-medium-width .ding-campaign-text .ding-campaign-headline:last-child {
+        margin-right: 0; }
+    .ding-campaign.text.ding-campaign-medium-width .ding-campaign-text .ding-campaign-description {
+      float: left;
+      display: block;
+      margin-right: 2.4911%;
+      width: 100%; }
+      .ding-campaign.text.ding-campaign-medium-width .ding-campaign-text .ding-campaign-description:last-child {
+        margin-right: 0; }
+    .no-touch .ding-campaign.text:hover {
+      background: #808285; }
+  .ding-campaign.image img {
+    width: 100%; }

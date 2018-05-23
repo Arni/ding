@@ -17,7 +17,7 @@ function ting_new_materials_default_page_manager_handlers() {
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = -28;
+  $handler->weight = -26;
   $handler->conf = array(
     'title' => 'New Materials',
     'no_blocks' => 0,
@@ -67,34 +67,10 @@ function ting_new_materials_default_page_manager_handlers() {
   );
   $display->cache = array();
   $display->title = '';
-  $display->uuid = '19feff8c-d0b9-4f29-a7f8-9cf187f0f6c2';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-657ca275-957d-4357-be9f-f0ce047c693e';
-    $pane->panel = 'left_sidebar';
-    $pane->type = 'menu_title';
-    $pane->subtype = 'menu_title';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '657ca275-957d-4357-be9f-f0ce047c693e';
-    $display->content['new-657ca275-957d-4357-be9f-f0ce047c693e'] = $pane;
-    $display->panels['left_sidebar'][0] = 'new-657ca275-957d-4357-be9f-f0ce047c693e';
-    $pane = new stdClass();
-    $pane->pid = 'new-ed908802-482e-447b-ab62-49f405a680bc';
+    $pane->pid = 'new-1';
     $pane->panel = 'left_sidebar';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-3';
@@ -110,13 +86,12 @@ function ting_new_materials_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'ed908802-482e-447b-ab62-49f405a680bc';
-    $display->content['new-ed908802-482e-447b-ab62-49f405a680bc'] = $pane;
-    $display->panels['left_sidebar'][1] = 'new-ed908802-482e-447b-ab62-49f405a680bc';
+    $display->content['new-1'] = $pane;
+    $display->panels['left_sidebar'][0] = 'new-1';
     $pane = new stdClass();
-    $pane->pid = 'new-e9d51fe1-7066-4df9-9b84-80b790d8abd3';
+    $pane->pid = 'new-2';
     $pane->panel = 'main_content';
     $pane->type = 'new_materials';
     $pane->subtype = 'new_materials';
@@ -128,7 +103,6 @@ function ting_new_materials_default_page_manager_handlers() {
       ),
       'override_title' => 0,
       'override_title_text' => '',
-      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -138,11 +112,10 @@ function ting_new_materials_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'e9d51fe1-7066-4df9-9b84-80b790d8abd3';
-    $display->content['new-e9d51fe1-7066-4df9-9b84-80b790d8abd3'] = $pane;
-    $display->panels['main_content'][0] = 'new-e9d51fe1-7066-4df9-9b84-80b790d8abd3';
+    $display->content['new-2'] = $pane;
+    $display->panels['main_content'][0] = 'new-2';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-e9d51fe1-7066-4df9-9b84-80b790d8abd3';
+  $display->title_pane = 'new-2';
   $handler->conf['display'] = $display;
   $export['node_view_panel_context_new_materials'] = $handler;
 

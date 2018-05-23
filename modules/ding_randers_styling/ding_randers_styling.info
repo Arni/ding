@@ -1,0 +1,5 @@
+name = Ding Randers
+description = Provides a Eresource page
+core = 7.x
+package = Ding!
+stylesheets[all][] = ding_randers_styling.css

@@ -13,7 +13,7 @@
 ?>
 
 <?php if ($results) : ?>
-  <div class="new-materials-covers">
+  <div class="search-results">
     <ul class="list floated">
       <?php foreach ($results as $result) : ?>
         <li class="list-item" style="display:inline-block">

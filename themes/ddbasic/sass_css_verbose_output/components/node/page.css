@@ -1,0 +1,160 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(-180deg); }
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  50% {
+    -moz-transform: rotate(-180deg); }
+  100% {
+    -moz-transform: rotate(-360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.node-ding-page .field-name-field-ding-page-title-image {
+  margin-bottom: 25px; }
+
+.node-ding-page .field-name-field-ding-page-lead,
+.node-ding-page .field-name-field-ding-page-body {
+  float: left;
+  display: block;
+  margin-right: 3.78378%;
+  width: 61.08108%;
+  margin-bottom: 30px; }
+  .node-ding-page .field-name-field-ding-page-lead:last-child,
+  .node-ding-page .field-name-field-ding-page-body:last-child {
+    margin-right: 0; }
+  .node-ding-page .field-name-field-ding-page-lead p:last-child,
+  .node-ding-page .field-name-field-ding-page-body p:last-child {
+    margin-bottom: 0; }
+  @media screen and (max-width: 950px) {
+    .node-ding-page .field-name-field-ding-page-lead,
+    .node-ding-page .field-name-field-ding-page-body {
+      float: left;
+      display: block;
+      margin-right: 2.4911%;
+      width: 65.8363%; }
+      .node-ding-page .field-name-field-ding-page-lead:last-child,
+      .node-ding-page .field-name-field-ding-page-body:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 600px) {
+    .node-ding-page .field-name-field-ding-page-lead,
+    .node-ding-page .field-name-field-ding-page-body {
+      width: 100%;
+      margin-right: 0; } }
+
+.node-ding-page .field-name-field-ding-page-files {
+  float: left;
+  display: block;
+  margin-right: 3.78378%;
+  width: 74.05405%;
+  margin: 0 0 30px; }
+  .node-ding-page .field-name-field-ding-page-files:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 950px) {
+    .node-ding-page .field-name-field-ding-page-files {
+      float: left;
+      display: block;
+      margin-right: 3.78378%;
+      width: 100%; }
+      .node-ding-page .field-name-field-ding-page-files:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 600px) {
+    .node-ding-page .field-name-field-ding-page-files {
+      margin: 15px 0 30px; } }
+  .node-ding-page .field-name-field-ding-page-files .field-label {
+    font-family: "FaktPro-SemiBold", sans-serif; }
+  .node-ding-page .field-name-field-ding-page-files .file-type {
+    margin-left: 6px; }
+
+.node-ding-page .field-name-field-ding-page-tags {
+  float: left;
+  display: block;
+  margin-right: 3.78378%;
+  width: 74.05405%;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px; }
+  .node-ding-page .field-name-field-ding-page-tags:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 600px) {
+    .node-ding-page .field-name-field-ding-page-tags {
+      float: left;
+      display: block;
+      margin-right: 3.78378%;
+      width: 100%; }
+      .node-ding-page .field-name-field-ding-page-tags:last-child {
+        margin-right: 0; } }
+  .node-ding-page .field-name-field-ding-page-tags .field-label {
+    font-family: "FaktPro-SemiBold", sans-serif; }
+  .node-ding-page .field-name-field-ding-page-tags .field-items .field-item {
+    display: inline;
+    margin-right: 15px; }
+
+.node-ding-page .webform-client-form {
+  float: left;
+  display: block;
+  margin-right: 3.78378%;
+  width: 61.08108%;
+  clear: left; }
+  .node-ding-page .webform-client-form:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 950px) {
+    .node-ding-page .webform-client-form {
+      float: left;
+      display: block;
+      margin-right: 2.4911%;
+      width: 65.8363%; }
+      .node-ding-page .webform-client-form:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 600px) {
+    .node-ding-page .webform-client-form {
+      width: 100%;
+      margin-right: 0; } }
