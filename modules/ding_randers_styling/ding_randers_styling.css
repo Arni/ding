@@ -789,19 +789,22 @@ ol.circle-list li:before {
 /* Ting new materials */
 
 .primary-content .pane-new-materials-covers .search-results ul.list li.list-item {
-    width : 16.8%;
+    width : 22.5%;
     
 }
 
-.primary-content .pane-new-materials-covers .search-results ul.list li.list-item:nth-child(5n+1) {
+.primary-content .pane-new-materials-covers .search-results ul.list li.list-item:nth-child(4n+1) {
     clear : left;
 }
 
 .primary-content .pane-new-materials-covers .search-results ul.list li.list-item:nth-child(7n+1) {
     clear : inherit;
-    margin-right : inherit;
+    margin-right : 2.4911%;
 }
 
+.primary-content .pane-new-materials-covers .search-results ul.list li.list-item:nth-child(7n) {
+    margin-right : 2.4911%;
+}
 
 
 

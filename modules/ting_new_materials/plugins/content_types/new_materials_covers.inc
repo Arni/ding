@@ -119,7 +119,7 @@ function ting_new_materials_render_cover($cached_results) {
 }
 
 function ting_new_materials_number_of_objects($node) {
-  $number_of_objects = 15;
+  $number_of_objects = 16;
   $items = field_get_items('node', $node, 'field-ting-new-materials-items');
   if (isset($items) && is_array($items) && isset($items[0]['value'])) {
     $number_of_objects= $items[0]['value'];
